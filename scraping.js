@@ -14,6 +14,7 @@ exports.scraingPuppeteer = async(req,res)=>{
             defaultViewport:null,
             headless:true,
             args: ['--no-sandbox','--disable-setuid-sandbox'],
+            timeout: 2200000, // Increase timeout
             // executablePath:process.env.NODE_ENV === "production"?process.env.PUPPETEER_EXECUTABLE_PATH:puppeteer.executablePath()
         });
     
